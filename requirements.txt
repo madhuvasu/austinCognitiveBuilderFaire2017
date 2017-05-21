@@ -1,3 +1,4 @@
 Flask==0.12
+geopy==1.11.0
 smartystreets.py==0.4.0
 watson-developer-cloud==0.26.0
