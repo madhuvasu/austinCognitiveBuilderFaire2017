@@ -1,0 +1,15 @@
+applications:
+#harddrive space
+- disk_quota: 1024M
+  host: madhu-python3
+  name: madhu-python3
+  path: .
+  domain: mybluemix.net
+  #one machine, can run 100 in parallel
+  #load balancer will balance the load per machine
+  instances: 1
+  #RAM per machine
+  memory: 256M
+  buildpack: https://github.com/cloudfoundry/buildpack-python.git#v1.5.18
+  #when you push this to cloud foundry, run this command
+  command: python main.py
